@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Neon Theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">   <!-- font-awesome -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style_test.css">
+    
+</head>
+<body class="gradient-bg">
+    <!-- Navbar -->
+     
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand neon-text" href="#"><Strong><h1>Subham</h1></Strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item"><a class="nav-link" href="#home"><strong><h5>Home</h5></strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><strong><h5>About</h5></strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills"><strong><h5>Skills</h5></strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><strong><h5>Projects</h5></strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><strong><h5>Contact</h5></strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+     <div class="home">
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center" data-aos="zoom-in">
+            <h1 class="neon-text display-1 fw-bold mb-4">Full Stack Developer</h1>
+            <p class="lead mb-4">Creating immersive digital experiences with modern technologies</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#contact" class="btn btn-neon btn-lg">Hire Me</a>
+                <a href="#" class="btn btn-outline-light btn-lg">Download CV</a>
+            </div><br>
+
+
+            <!-- social handel -->
+            <div class="text-center">
+                <a href="https://www.linkedin.com/in/subham-pantha-913118349/" class="btn" >
+                    <i class="fab fa-linkedin fa-2x" style="color: white;"></i> 
+                </a>
+                <a href="https://github.com/Cosmic882" class="btn" >
+                    <i class="fab fa-github fa-2x" style="color: white;"></i> 
+                </a>
+                <a href="#" class="btn" >
+                    <i class="fab fa-x-twitter fa-2x" style="color: white;"></i> 
+                </a>
+            </div>
+        </div>
+
+    </section></div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="profile-placeholder.jpg" class="img-fluid rounded-4" alt="Profile">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2 class="neon-text mb-4">About Me</h2>
+                    <p class="lead">Passionate developer specializing in creating performant web applications with modern tech stack.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h5 class="text-cyan">Name:</h5>
+                            <p>Subham Pantha</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-cyan">Experience:</h5>
+                            <p>4+ Years</p>
+                            <button type="button" class="btn btn-danger btn btn-neon btn-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="neon-text text-center mb-5" data-aos="fade-up">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="skill-card p-4 rounded-4">
+                        <i class="fab fa-react fa-3x text-cyan mb-3"></i>
+                        <h3>React</h3>
+                        <p>Advanced React ecosystem expertise</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="skill-card p-4 rounded-4">
+                        <i class="fab fa-js fa-3x text-cyan mb-3"></i>    <!-- fa-3x is responsibel for the size of icon -->
+                        <h3>JavaScript</h3>
+                        <p>Advance JavaScript Experties</p>
+                    </div>
+                </div>
+                <!-- Add more skill cards -->
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="skill-card p-4 rounded-4">
+                        <i class="fab fa-html5 fa-3x text-cyan mb-3"></i>
+                        <h3>HTML&CSS</h3>
+                        <p>Advance Web Dev</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="neon-text text-center mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="project-card rounded-4">
+                        <img src="phone.jpg" class="img-fluid" alt="Project">
+                        <div class="p-4">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-stack shopping solution</p>
+                            <button type="button" class="btn btn-danger btn btn-neon btn-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects -->
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="project-card rounded-4">
+                        <img src="motel.jpg" class="img-fluid" alt="Project">
+                        <div class="p-4">
+                            <h3>Database For Motel</h3>
+                            <p>Fully functional database with easy admin access...</p>
+                            <button type="button" class="btn btn-danger btn btn-neon btn-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="project-card rounded-4">
+                        <img src="map.jpg" class="img-fluid" alt="Project">
+                        <div class="p-4">
+                            <h3>Navigational Web App</h3>
+                            <p>Navigation app for tourist which has the multiple language support.</p>
+                            <button type="button" class="btn btn-danger btn btn-neon btn-lg">Learn More</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="neon-text text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6" data-aos="zoom-in">
+                    <form class="rounded-4 p-4" style="background: var(--card-bg)">
+                        <div class="mb-3">
+                            <label for="Name">Name</label>
+                            <input type="text" class="form-control bg-dark text-light" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control bg-dark text-light" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Message">Message</label>
+                            <textarea class="form-control bg-dark text-light" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-neon w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    
+    
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.navbar');
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
