@@ -1,9 +1,44 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
 .home{
+
     background: url(moon.jpg) no-repeat center;
     height: 100vh;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
+}
+
+/* Style the button */
+#goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hidden by default */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+#goToTop:hover {
+  background-color: #0056b3;
 }
 
 
@@ -17,6 +52,7 @@
 }
 
 body {
+  
     background: var(--dark-bg);
     color: white;
     font-family: 'Segoe UI', sans-serif;
@@ -30,11 +66,20 @@ body {
         #0a0a16 100%);
 }
 
+.trans{
+  color: transparent;
+}
+
+.seen{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 600;
+}
 
 .navbar {
     backdrop-filter: blur(10px);
     background: rgba(10, 10, 22, 0.9) !important;
-    border-bottom: 1px solid var(--neon-cyan);
+    border-bottom: 2px solid var(--neon-cyan);
 }
 
 
@@ -160,8 +205,14 @@ body {
 }
 .img-fluid {
     height: 300px; /* Adjust this value as needed */
+    
     object-fit: cover; /* Ensures the image scales properly */
 }
+.img-me{
+  height: 480px;
+  width: 370px;
+}
+
 footer {
     background: black;
     text-align: center;
@@ -173,29 +224,8 @@ footer {
 }
 
 
-    /* Style the button */
-    #goToTop {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: none; /* Hidden by default */
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 15px;
-      cursor: pointer;
-      font-size: 16px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      z-index: 2;
-    }
-
-    #goToTop:hover {
-      background-color: #0056b3;
-    }
- 
-
-    /* sami */
+    
+    /* pre footer */
 
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 * {
@@ -234,11 +264,14 @@ footer {
   margin-bottom: 10px;
 }
 .footer-col .links li a {
+  display: inline-block;                  /* make the link to transform act as a block*/
+  transition: transform 0.3s ease, color 0.3s ease; 
   text-decoration: none;
   color: #bfbfbf;
 }
 .footer-col .links li a:hover {
   color: #fff;
+  transform: translateX(10px);
 }
 .footer-col p {
   margin: 20px 0;
@@ -310,4 +343,115 @@ footer {
   .footer-col form button {
     margin: 10px 0 0 0;
   }
+
+
+
+/*Service section*/
+
+
+  /* Service Section Styles */
+.service-card {
+  background: var(--card-bg);
+  border:  1px solid var(--neon-cyan);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px var(--neon-pink);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+
+/* blog */
+.blog-card {
+
+  background: var(--card-bg);
+  border:   1px solid var(--neon-cyan);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px var(--neon-cyan);
+}
+
+.blog-card h3 {
+  margin-bottom: 10px;
+  color: var(--neon-cyan);
+}
+
+.blog-card p {
+  color: #ccc;
+}
+
+ .footer-col .btn-neon {
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-pink));
+  border: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-col .btn-neon:hover {
+  transform: translateY(-10px);
+ 
+}
+
+
+
+/* Visit Us Box Styling */
+#contact .col-md-6.d-flex.align-items-center > div {
+  padding: 40px; 
+  min-height: 300px; 
+  width: 100%; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+.typing-effect {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--neon-cyan);
+  position: relative;
+}
+
+.typing-effect .dynamic-text::after {
+  content: ""; /* Cursor */
+  position: absolute;
+  right: -10px;
+  animation: blink 0.1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+#changing-text{
+  display: flex;
+  align-items: center; /* Vertically align items */
+  
+}
 
